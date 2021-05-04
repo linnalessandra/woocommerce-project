@@ -32,3 +32,22 @@ function show_menus(){
 
 /* ta bort det under produktern (sidebar) */
 remove_action('woocommerce_sidebar', 'woocommerce_get_sidebar');
+/* custom post type */
+function custom_post_type_stores(){
+    $myTestArray = array( 'thumbnail', 'title', 'editor');
+    register_post_type('stores', [
+        'public' => true,
+        'label' => 'Stores',
+        'show_in_rest' => true,
+        'has_archive' => true,
+        'supports' => $myTestArray
+        ]);
+        register_taxonomy('address', 'stores', [
+            'labels' => [
+                'name' => 'Address'
+            ],
+            'hierarchical' => true,
+            ]);
+            
+        }
+add_action('init', 'custom_post_type_stores');

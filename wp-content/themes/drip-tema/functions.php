@@ -11,6 +11,7 @@ add_theme_support('widgets');
 function css_and_js(){
     wp_enqueue_style('styling1', get_template_directory_uri(). '/style.css' );
     wp_enqueue_style('styling2', get_template_directory_uri(). '/style-shop.css'); 
+    wp_enqueue_style('styling3', get_template_directory_uri(). '/style-blog.css'); 
 }
 add_action('wp_enqueue_scripts', 'css_and_js');
 /* kör funktionen show_my_menus vid en viss krok */

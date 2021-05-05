@@ -52,6 +52,7 @@ function custom_post_type_stores(){
             
         }
 add_action('init', 'custom_post_type_stores');
+
 /* skapar en cutom meta box  */
 function add_custom_meta_box_stores() {
     $screens = [ 'post', 'stores' ];
@@ -88,3 +89,13 @@ function wporg_save_postdata( $post_id ) {
     }
 }
 add_action( 'save_post', 'wporg_save_postdata' );
+
+
+/* Wdiget för sökfält i header */
+register_sidebar([
+    'name' => 'Search Widget',
+    'Description' => 'Widget för sökfält i headern',
+    'id' => 'searching',
+    'before_widget' => false,
+]);
+

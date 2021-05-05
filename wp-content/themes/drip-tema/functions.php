@@ -53,6 +53,44 @@ function custom_post_type_stores(){
         }
 add_action('init', 'custom_post_type_stores');
 
+/* skapar en cutom meta box  */
+function add_custom_meta_box_stores() {
+    $screens = [ 'post', 'stores' ];
+    foreach ( $screens as $screen ) {
+        add_meta_box(
+            'stores-meta-box',               
+            'Address',      
+            'stores_custom_box_html',  
+            $screen                            
+        );
+    }
+}
+/* denna genererar det som syns i redigeringsläget */
+function stores_custom_box_html( $post ) {
+    $value = get_post_meta( $post->ID, '_wporg_meta_key', true );
+    ?>
+    <label for="wporg_field">Description for this field</label>
+    <select name="wporg_field" id="wporg_field" class="postbox">
+        <option value="Drottninggatan 53" <?php selected( $value, 'Drottninggatan 53' ); ?>>Drottninggatan 53</option>
+        <option value="Kungsgatan 41" <?php selected( $value, 'Kungsgatan 41' ); ?>>Kungsgatan 41</option>
+        <option value="Kullagatan 12" <?php selected( $value, 'Kullagatan 12' ); ?>>Kullagatan 12</option>
+    </select>
+    <?php
+}
+add_action( 'add_meta_boxes', 'add_custom_meta_box_stores' );
+/* denna funktion gör så att datan från meta-boxen sparas*/
+function wporg_save_postdata( $post_id ) {
+    if ( array_key_exists( 'wporg_field', $_POST ) ) {
+        update_post_meta(
+            $post_id,
+            '_wporg_meta_key',
+            $_POST['wporg_field']
+        );
+    }
+}
+add_action( 'save_post', 'wporg_save_postdata' );
+
+
 /* Wdiget för sökfält i header */
 register_sidebar([
     'name' => 'Search Widget',
@@ -60,3 +98,4 @@ register_sidebar([
     'id' => 'searching',
     'before_widget' => false,
 ]);
+

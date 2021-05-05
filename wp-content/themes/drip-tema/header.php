@@ -4,17 +4,36 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>YOULRY</title>
 	<?php wp_head(); ?>
 </head>
 <body <?php echo body_class(); ?>>
+
+
 <header>
-	<?php    
-	$mainMenuArray = [
-		'theme_location' => 'mainmenu'
-		];
+	<div style="height: 15vh; justify-content: center; display:flex;">
+		<img  src="<?= get_template_directory_uri() . '/img/thereal.png' ?>">
+	</div>
+	
+	
+	<div class="headerMenu">
+		
+
+		<?php    
+		$mainMenuArray = [
+			'theme_location' => 'mainmenu'
+			];
 							
 		wp_nav_menu($mainMenuArray);
-	?>
+		?>
+		<div class="searchBar">
+			<?php dynamic_sidebar('searching'); ?>
+		</div>
+		
+	</div>
+
+	
+
+
 </header>
-<h1>HEADER</h1>
+

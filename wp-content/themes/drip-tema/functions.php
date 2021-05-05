@@ -52,3 +52,11 @@ function custom_post_type_stores(){
             
         }
 add_action('init', 'custom_post_type_stores');
+
+/* Wdiget för sökfält i header */
+register_sidebar([
+    'name' => 'Search Widget',
+    'Description' => 'Widget för sökfält i headern',
+    'id' => 'searching',
+    'before_widget' => false,
+]);

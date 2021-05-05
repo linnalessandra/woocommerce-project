@@ -1,3 +1,67 @@
 /* 
 Theme Name: Drip Tema
 */
+
+body {
+    margin: 0; 
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html {
+    width: 100%;
+    margin: 0;
+}
+
+header {
+    border: solid black 5px;
+}
+
+.searchBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px;
+}
+
+.searchBar button  {
+    background-color: white;
+    border: solid lightgray 1px;
+    border-radius: 7px;
+    padding: 5px;
+}
+
+.searchBar input {
+    background-color: white;
+    border: none;
+    padding: 5px;
+}
+
+.headerMenu ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none!important;
+    list-style: none!important;
+    height: 5vh;
+}
+
+.headerMenu a {
+    text-decoration: none!important;
+    margin: 5vh;
+    color: black;
+    padding: 15px;
+}
+
+a:visited { 
+    text-decoration: none; 
+    color: black; 
+}
+
+.headerMenu a:hover { 
+    color: gray;
+    background-color: rgba(211, 211, 211, 0.356);
+    border-radius: 10px;
+}

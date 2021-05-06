@@ -146,7 +146,6 @@ a:visited {
 input {
   
     color: rgb(0, 4, 255);
-    background-color: rgb(235, 233, 113);
     display: flex;
     flex-direction: column;
     align-self: center;
@@ -156,21 +155,6 @@ input {
 
 
 }
-
-/* form {
-    color: rgb(0, 26, 255);
-    align-self: center;
-    background-color: rosybrown;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    font-size: large;
-    width: 500px;
-    text-decoration: slateblue;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
 
 input[type="submit"] {
     font-size: large;
@@ -184,6 +168,27 @@ input[type="submit"] {
     
 
 } */
+
+.contact-forum {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    align-content: space-around;
+    justify-content: space-evenly;
+}
+
+@media screen and (max-width: 980px) {
+    .contact-forum {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
 
 /* --------------Kontakt sidan styling END---------------------- */
 

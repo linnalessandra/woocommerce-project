@@ -2,10 +2,67 @@
 Theme Name: Drip Tema
 */
 
+@media screen and (max-width: 1100px) {
+    body {
+      margin: 0;
+    }
+
+    header {        
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+/*         flex-wrap: wrap;
+ */      width: 100%;
+    }
+
+    .headerMenu ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        height: auto;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .headerMenu li {
+        margin: 10px;
+        font-size: 12px!important;
+    }
+
+    .headerMenu a {
+        margin: 5px!important;
+        font-size: 11px!important;
+    }
+
+    .headerImage {
+        max-width: -webkit-fill-available;
+        display: flex;
+        flex-shrink: 1;
+        justify-content: center;
+        object-fit: contain;
+    }
+
+    .startPhoto {
+        display: flex; 
+        justify-content: center; 
+        align-items:center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+  }
+
+
 body {
     margin: 0; 
     width: 100%;
     font-family: 'Montserrat', sans-serif;
+}
+
+img {
+    max-width: 100%;
 }
 
 html {
@@ -14,10 +71,28 @@ html {
 }
 
 header {
-    border: solid black 5px;
+    border: solid black 4px;
+    position: sticky;
+}
+
+.headerImage {
+    max-width: auto;
+    object-fit: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .searchBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px;
+
+}
+
+.searchBar form {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,14 +120,15 @@ header {
     align-items: center;
     text-decoration: none!important;
     list-style: none!important;
-    height: 5vh;
+    flex-wrap: wrap;
+    flex-shrink: 1;
 }
 
 .headerMenu a {
     text-decoration: none!important;
-    margin: 5vh;
     color: black;
     padding: 15px;
+    font-size: 15px;
 }
 
 a:visited { 
@@ -81,7 +157,7 @@ input {
 
 }
 
-form {
+/* form {
     color: rgb(0, 26, 255);
     align-self: center;
     background-color: rosybrown;
@@ -107,6 +183,26 @@ input[type="submit"] {
     margin: 5px;
     
 
-}
+} */
 
 /* --------------Kontakt sidan styling END---------------------- */
+
+/* ----styling för regler- och villkor sidan */
+
+.rules {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 7vh;
+}
+
+.startPhoto {
+    display: flex; 
+    justify-content: center; 
+    align-items:center;
+    flex-direction: column;
+    max-width: auto;
+    object-fit: contain;
+
+}

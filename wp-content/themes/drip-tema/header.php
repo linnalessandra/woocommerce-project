@@ -11,7 +11,7 @@
 
 
 <header>
-	<div style="height: 15vh; justify-content: center; display:flex;">
+	<div class="headerImage">
 		<img  src="<?= get_template_directory_uri() . '/img/thereal.png' ?>">
 	</div>
 	

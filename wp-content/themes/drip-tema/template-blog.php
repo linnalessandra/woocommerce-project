@@ -30,7 +30,7 @@ if ( $loop->have_posts() ) {
         </h2>
         <p>
         <?php
-        the_excerpt();
+        the_content();
         ?>
         </p>
     <?php

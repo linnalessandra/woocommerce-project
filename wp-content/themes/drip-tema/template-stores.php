@@ -16,7 +16,7 @@ if ( $loop->have_posts() ) {
         echo '<h2>';    
         echo the_title();
         echo '</h2>';
-        $imgURL = get_the_post_thumbnail_url();
+        $imgURL = get_the_post_thumbnail_url(null, 'large');
         echo '<div class="img-stores-wrapper">';
         echo '<img class="img-stores" src="'.$imgURL.'">';
         echo '</div>';

@@ -4,7 +4,6 @@ Template name: store
 */
 get_header();
 echo '<div class="main-stores">';
-echo '<hr>';
 $args = array(
     'post_type' => 'stores',
     'posts_per_page' => -1

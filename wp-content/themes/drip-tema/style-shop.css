@@ -1,7 +1,7 @@
 /* Färger */
 :root {
     --buttons: #599bb3;
-    --backgroundProducts: whitesmoke;
+    --backgroundProducts: white;
    
   }
   *{
@@ -90,7 +90,15 @@ body{
 .woocommerce .woocommerce-breadcrumb {
     margin-left: 20px !important;
 }
+#main{
+    margin-top: 20px;
+    padding-right: 4px;
+    padding-left: 4px;
+}
 /* stores-page */
+.lmm-panel-text {
+    background-color: white;
+}
 .main-stores{
     display: flex;
     flex-direction: column;
@@ -100,8 +108,8 @@ body{
     width: 100%;
 }
 .main-stores hr{
-   width: 80%;
-   border-top: 1px solid var(--buttons);
+   width: 90%;
+   border-top: 4px solid black;
 }
 .stores-wrapper{
     width: 70%;

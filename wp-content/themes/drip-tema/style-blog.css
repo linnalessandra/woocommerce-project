@@ -1,4 +1,38 @@
+:root {
+
+    --buttons: #599bb3;
+
+    --backgroundProducts: white;
+
+
+  }
+
 .main-blog{
+
 background-color: silver;
+
 text-align: center;
+
+}
+
+.add_to_cart_button{
+
+    background:linear-gradient(to bottom, var(--buttons) 5%, #408c99 100%);
+
+    background-color: var(--buttons) !important;
+
+    color:#ffffff !important;
+
+    font-family:Arial;
+
+}
+
+
+
+.add_to_cart_button:hover{
+
+    background:linear-gradient(to bottom, #408c99 5%, var(--buttons) 100%) !important;
+
+    background-color:#408c99 !important;
+
 }

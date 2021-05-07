@@ -3,6 +3,7 @@
 Template name: store
 */
 get_header();
+dynamic_sidebar('puff'); 
 echo '<div class="main-stores">';
 $args = array(
     'post_type' => 'stores',
@@ -32,4 +33,5 @@ if ( $loop->have_posts() ) {
 wp_reset_postdata();
 
 echo '</div>'; 
+/* echo do_shortcode('[arpw thumbnail="true" limit="1"]'); */
 get_footer();

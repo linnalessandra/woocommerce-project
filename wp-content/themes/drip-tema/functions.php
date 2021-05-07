@@ -99,3 +99,19 @@ register_sidebar([
     'before_widget' => false,
 ]);
 
+
+/* Widget för sökfält på framsidan */
+
+register_sidebar([
+    'name' => 'Frontpage Widget',
+    'Description' => 'Widget för startsidan',
+    'id' => 'frontpagewidgetone',
+    'before_widget' => false,
+]);
+register_sidebar([
+    'name' => 'Frontpage Widget Two',
+    'Description' => 'Widget två för startsidan',
+    'id' => 'frontpagewidgettwo',
+    'before_widget' => false,
+]);
+

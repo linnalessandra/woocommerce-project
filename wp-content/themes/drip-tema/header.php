@@ -12,13 +12,13 @@
 
 <header>
 	<div class="headerImage">
+		<a href="www.ales-sandra.com">
 		<img  src="<?= get_template_directory_uri() . '/img/thereal.png' ?>">
+		</a>
 	</div>
 	
-	
+	<b>
 	<div class="headerMenu">
-		
-
 		<?php    
 		$mainMenuArray = [
 			'theme_location' => 'mainmenu'
@@ -29,8 +29,8 @@
 		<div class="searchBar">
 			<?php dynamic_sidebar('searching'); ?>
 		</div>
-		
 	</div>
+	</b>
 
 	
 

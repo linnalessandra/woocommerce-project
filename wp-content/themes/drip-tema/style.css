@@ -207,6 +207,9 @@ input {
     object-fit: contain;
 
 }
+
+
+
 /* ---------------------start sidan --------------------- */
 .product_filter{
     background-color: rgb(105, 104, 197);
@@ -219,6 +222,13 @@ input {
 .wpfMainWrapper {
     background-color: rgb(23, 161, 106);
     height: 500px;
+}
+
+.widgets {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
 }
     
     

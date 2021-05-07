@@ -119,6 +119,22 @@ register_sidebar([
 /* Link till sidan med aktuella kampanjer */
 add_action ('rea', 'sale');
 
+
+/* Widget för sökfält på framsidan */
+
+register_sidebar([
+    'name' => 'Frontpage Widget',
+    'Description' => 'Widget för startsidan',
+    'id' => 'frontpagewidgetone',
+    'before_widget' => false,
+]);
+register_sidebar([
+    'name' => 'Frontpage Widget Two',
+    'Description' => 'Widget två för startsidan',
+    'id' => 'frontpagewidgettwo',
+    'before_widget' => false,
+]);
+
 function sale (){
         header("LOCATION: http://localhost/woocommerce-project2/?elementor_library=sale/");
     }

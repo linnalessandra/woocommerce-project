@@ -98,6 +98,26 @@ register_sidebar([
     'id' => 'searching',
     'before_widget' => false,
 ]);
+/* Wdiget för PUFF */
+register_sidebar([
+    'name' => 'Puff Widget',
+    'Description' => 'Widget för puff av blogginlägg',
+    'id' => 'puff',
+    'before_widget' => '<div id="puff">',
+    'after_widget' => '</div>',
+]);
+
+/* Wdiget för start sida */
+register_sidebar([
+    'name' => 'Product Filter',
+    'Description' => 'här kan flitrera REA, Populart Product',
+    'id' => 'product_filter',
+    'before_widget' => false,
+]);
+
+
+/* Link till sidan med aktuella kampanjer */
+add_action ('rea', 'sale');
 
 
 /* Widget för sökfält på framsidan */
@@ -115,3 +135,6 @@ register_sidebar([
     'before_widget' => false,
 ]);
 
+function sale (){
+        header("LOCATION: http://localhost/woocommerce-project2/?elementor_library=sale/");
+    }

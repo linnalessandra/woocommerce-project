@@ -98,4 +98,12 @@ register_sidebar([
     'id' => 'searching',
     'before_widget' => false,
 ]);
+/* Wdiget för PUFF */
+register_sidebar([
+    'name' => 'Puff Widget',
+    'Description' => 'Widget för puff av blogginlägg',
+    'id' => 'puff',
+    'before_widget' => '<div id="puff">',
+    'after_widget' => '</div>',
+]);
 

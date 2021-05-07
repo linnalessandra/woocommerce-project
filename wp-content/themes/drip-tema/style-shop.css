@@ -190,6 +190,51 @@ body{
         padding: 10px !important;
     }
 }
+/* style puff */
+#puff{
+    padding: 10px;
+    /* border: black solid 2px; */
+    border-radius: 4px;
+    top: 50px;
+    left: 10px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    z-index: 5;
+    box-shadow: none;
+    animation-name: puffeffect;
+    animation-duration: 4s;
+    
+}
+#puff ul li{
+    list-style: none;
+}
+#puff ul li a{
+    text-decoration: none;
+}
+#puff:hover{
+    box-shadow: 0px 14px 14px -7px black;
+} 
+@keyframes puffeffect {
+  0%   {box-shadow: 0px 14px 14px -7px black;}
+  25%  {box-shadow: none;}
+  50%  {box-shadow: 0px 14px 14px -7px black;}
+  100% {box-shadow: none;}
+}
+.arpw-random-post ul li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+} 
+.arpw-title{
+    text-decoration: none;
+    color: black;
+}
+
+  
 @media screen and (max-width: 450px){
     /* #order_review_heading{
         align-self: center;

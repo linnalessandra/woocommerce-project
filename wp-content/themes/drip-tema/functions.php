@@ -99,3 +99,18 @@ register_sidebar([
     'before_widget' => false,
 ]);
 
+/* Wdiget för start sida */
+register_sidebar([
+    'name' => 'Product Filter',
+    'Description' => 'här kan flitrera REA, Populart Product',
+    'id' => 'product_filter',
+    'before_widget' => false,
+]);
+
+
+/* Link till sidan med aktuella kampanjer */
+add_action ('rea', 'sale');
+
+function sale (){
+        header("LOCATION: http://localhost/woocommerce-project2/?elementor_library=sale/");
+    }

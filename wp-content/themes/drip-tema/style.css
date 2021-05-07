@@ -144,7 +144,6 @@ a:visited {
 
 /* --------------Kontakt sidan styling START---------------------- */
 input {
-  
     color: rgb(0, 4, 255);
     display: flex;
     flex-direction: column;
@@ -152,11 +151,9 @@ input {
     justify-content: center;
     align-content: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
-
 }
 
-input[type="submit"] {
+.contact p input[type="submit"] {
     font-size: large;
     padding: 15px;
     border: 2px solid #5596F5;
@@ -165,9 +162,7 @@ input[type="submit"] {
     width: auto;
     text-align: center;
     margin: 5px;
-    
-
-} */
+} 
 
 .contact-forum {
     display: flex;
@@ -175,6 +170,7 @@ input[type="submit"] {
     align-items: flex-start;
     align-content: space-around;
     justify-content: space-evenly;
+    margin-top: 30px;
 }
 
 @media screen and (max-width: 980px) {
@@ -211,3 +207,19 @@ input[type="submit"] {
     object-fit: contain;
 
 }
+/* ---------------------start sidan --------------------- */
+.product_filter{
+    background-color: rgb(105, 104, 197);
+}
+
+.wps-slider-section.wps-slider-section-150 {
+    margin-top: 40px;
+}
+
+.wpfMainWrapper {
+    background-color: rgb(23, 161, 106);
+    height: 500px;
+}
+    
+    
+    /* ---------------------start sidan END --------------------- */

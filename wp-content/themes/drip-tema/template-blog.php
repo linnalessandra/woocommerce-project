@@ -13,9 +13,9 @@ $args = array(
 
     'post_type' => 'post',
 
-    'posts_per_page' => 1,
+    'posts_per_page' => 3,
 
-    'post_title' => 'News'
+    'post_title' => 'news'
 
     );
 

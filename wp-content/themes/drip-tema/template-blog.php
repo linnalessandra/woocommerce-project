@@ -1,5 +1,4 @@
 <?php
-
 /* 
 Template name: Blog
 */
@@ -13,9 +12,7 @@ $args = array(
 
     'post_type' => 'post',
 
-    'posts_per_page' => 3,
-
-    'post_title' => 'news'
+    'posts_per_page' => -1
 
     );
 

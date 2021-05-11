@@ -233,3 +233,6 @@ input {
     
     
     /* ---------------------start sidan END --------------------- */
+    .bdt-prime-slider-skin-woocommerce .bdt-ps-slideshow-content-wrapper .bdt-ps-add-to-cart .button {
+        border: none !important;
+}

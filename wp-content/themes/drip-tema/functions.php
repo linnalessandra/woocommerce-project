@@ -19,6 +19,7 @@ add_action('after_setup_theme', 'show_menus');
 /* funktion för att kunna placera menyerna där du vill ha dem */
 function show_menus(){
     register_nav_menu('mainmenu', 'Mainmenu');
+    register_nav_menu('footermenu', 'Footer menu');
 }
 /* 
     Detta används för att placera menyn
@@ -128,10 +129,11 @@ register_sidebar([
     'id' => 'frontpagewidgetone',
     'before_widget' => false,
 ]);
+/* footer widget */
 register_sidebar([
-    'name' => 'Frontpage Widget Two',
-    'Description' => 'Widget två för startsidan',
-    'id' => 'frontpagewidgettwo',
+    'name' => 'Footer widget kontakt',
+    'Description' => 'Widget för footer till vänster',
+    'id' => 'footerwidget',
     'before_widget' => false,
 ]);
 

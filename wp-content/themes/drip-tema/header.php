@@ -12,7 +12,7 @@
 
 <header>
 	<div class="headerImage">
-		<a href="www.ales-sandra.com">
+		<a href="http://www.ales-sandra.com">
 		<img  src="<?= get_template_directory_uri() . '/img/thereal.png' ?>">
 		</a>
 	</div>

@@ -1,7 +1,17 @@
-<footer style="background-color: silver;" >
-    <div>
-    <h1>FOOOTER</h1>
+<footer class="footergrp3">
+    <div class="footerwidget">
+    <?php dynamic_sidebar('footerwidget'); ?>
     </div>
+    <div class="footermenu">
+    <?php    
+		$footerMenuArray = [
+			'theme_location' => 'footermenu'
+			];
+							
+		wp_nav_menu($footerMenuArray);
+		?>
+    </div>
+
 </footer>
 
 <?php 

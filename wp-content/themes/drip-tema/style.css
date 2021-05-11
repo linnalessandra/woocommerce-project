@@ -52,6 +52,13 @@ Theme Name: Drip Tema
         width: 100%;
     }
 
+    .footermenu ul a {
+        display: flex;
+        align-items: stretch;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0;
+    }
   }
 
 
@@ -238,16 +245,16 @@ input {
 }
 /* footer */
 .footergrp3{
-    background-color: lightgray;
+    background-color: whitesmoke;
     width: 100%;
-    height: 150px;
+    height: auto;
     margin: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     padding: 10px;
-    
+    color: rgba(0, 0, 0, 0.836) !important;
 }
 .footermenu ul{
     list-style: none !important;
@@ -255,7 +262,27 @@ input {
     font-size: 12px;
 }
 .footermenu a{
-    color: black !important;
+    color: rgba(0, 0, 0, 0.836) !important;
     text-decoration: none !important;
     list-style: none !important;
+    padding: 10px;
+}
+
+.footermenu li {
+    padding: 7px;
+}
+
+.footermenu a:hover {
+    color: gray;
+    background-color: rgba(211, 211, 211, 0.575);
+    border-radius: 10px;
+}
+
+.finishingFooter {
+    background-color: whitesmoke;
+    color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }

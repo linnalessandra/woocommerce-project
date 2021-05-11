@@ -35,3 +35,21 @@ I min template-stores.php har jag skapat en loop som loopar ut just poster med p
 Har även lagt till lite styling till denna i style-shop.css. Har fortsatt lägga till lite styling på 
 cart, checkout och enskild produkt.
 Har skapat några pages på våran live sida som vi kan koppla sen när pushar upp koden.
+
+Onsdag 5/5:
+Idag har jag skapat en custom meta box till posttypen stores, i denna kan man i redigeringsläget välja vilken adress som tillhör affären man skapat. Har även lagt till så att detta skrivs ut i template-stores.php. Laddade ner plugin för kartor som heter leaflet maps marker och skapade kartor för varje affär. Kollade på plugin för caching så att sidan blir snabbare.
+La till bildstorlek large i funktionen get_the_post_thumbnail_url för att inte få ut orginalbilderna som var på ca 554kb, istället en på ca 147kb så att sidan laddar snabbare.
+
+Torsdag 6/5:
+Idag på morgonen har vi suttit och laddat upp den senaste koden på live-sidan. Har suttit och fixat ett plugin för fraktmetoden ’cykelbud’. Har även lagt till en lite ”puff” för blogginlägg med hjälp av en widget.
+
+Fredag 7/5:
+Har idag suttit med frakt-pluginet (cykelbud), nu har jag fått det att fungera. Fraktkostnaden är beroende på hur mycket produkterna väger du handlar. Har även kollat lite på hur inloggningssystemet för kunderna på woocommerce fungerar (aktiverat att man kan skapa ett konto) och lagt till lite styling på sidan ”my account”.
+
+Måndag 10/5: 
+Har fortsatt på pluginet, har lagt till att man i admin-panelen kan välja kostnad för cykelbud under 5kg.
+
+Tisdag 11/5:
+Fortsatt med frakt-plugin, lagt till en funktion som kollar vilken postkod kunden som beställer har, har du inte någon av de postkoder som våra butiket liggir i blir det väldigt dyrt. Idag ska vi förbereda presentationen och fixa med småsaker på sidan.
+
+

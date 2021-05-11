@@ -136,5 +136,5 @@ register_sidebar([
 ]);
 
 function sale (){
-        header("LOCATION: http://localhost/woocommerce-project2/?elementor_library=sale/");
+        header("LOCATION: http://ales-sandra.com/woocommerce-project2/?elementor_library=sale/");
     }

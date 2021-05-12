@@ -34,3 +34,9 @@ $args = array(
     'post_title' => 'News'
 
     );
+
+Tisdag / 05 - 11 /
+Förberedelser inför presentationen, färdigställde även hela bloggsidan med inlägg och styling.
+
+Onsdag / 05 - 12 / 
+Redovisning inför klassen och Ian, pratade om utmaningar vi stött på under projektet. Sedan satt vi alla i gruppen och gjorde klart finjusteringar på styling. Jag skrev manualen som ska lämnas vidare till nästa användare av hemsidan.

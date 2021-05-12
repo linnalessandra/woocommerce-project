@@ -28,3 +28,7 @@ Måndag 10/5
 
 Tisdag 11/5
 - Gjorde klart presentationen och planerade vem som skulle säga vad. Jag, Linn och Kanan hjälptes åt med att stylea startsidan och sedan gjorde vi alla klart footern tillsammans.
+
+Onsdag 12/5 
+- Hade presentation på förmiddagen. Eftermiddagen spenderade vi på att fixa sista förfiningarna av hemsidan och sedan lämna in.
+

@@ -15,3 +15,9 @@ Pushat upp ändringar. Lagt till fler blogginlägg. Installerat font plugin på 
 
 6/5
 Försökt att ändra CSS styling för blogg sida så den matchar resten av sidan.
+
+10/7
+Lagt till populära produkter.
+
+12/5
+Presentation.

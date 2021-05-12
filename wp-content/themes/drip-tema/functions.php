@@ -21,16 +21,6 @@ function show_menus(){
     register_nav_menu('mainmenu', 'Mainmenu');
     register_nav_menu('footermenu', 'Footer menu');
 }
-/* 
-    Detta används för att placera menyn
-	$mainMenuArray = [
-	'theme_location' => 'mainmenu'
-	];
-						
-	wp_nav_menu($mainMenuArray);
-						
-
-*/
 
 /* ta bort det under produktern (sidebar) */
 remove_action('woocommerce_sidebar', 'woocommerce_get_sidebar');
@@ -116,11 +106,6 @@ register_sidebar([
     'before_widget' => false,
 ]);
 
-
-/* Link till sidan med aktuella kampanjer */
-add_action ('rea', 'sale');
-
-
 /* Widget för sökfält på framsidan */
 
 register_sidebar([
@@ -137,6 +122,4 @@ register_sidebar([
     'before_widget' => false,
 ]);
 
-function sale (){
-        header("LOCATION: http://ales-sandra.com/woocommerce-project2/?elementor_library=sale/");
-    }
+

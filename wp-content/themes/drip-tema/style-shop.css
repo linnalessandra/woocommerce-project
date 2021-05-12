@@ -28,7 +28,7 @@ body{
     text-align: center;
     display: flex;
     flex-direction: column;
-    margin: 20px !important;
+    /* margin: 20px !important; */
     width: 25% !important;
 }
 .product-image-drip-wrapper{
@@ -76,6 +76,11 @@ body{
 }
 .woocommerce-Price-amount{
     color: black;
+}
+/* test */
+.product .type-product{
+    width: 100% !important;
+    margin: 0 !important;
 }
 /* single product */
 .woocommerce .quantity .qty {

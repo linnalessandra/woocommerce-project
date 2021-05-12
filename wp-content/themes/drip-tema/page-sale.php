@@ -2,7 +2,7 @@
 /* 
 Template name: REA 
 */
-do_action('rea');
+
 
 get_header();
 while( have_posts()){
